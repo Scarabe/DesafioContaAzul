@@ -3,6 +3,7 @@ package api.desafio.contaazul.integration;
 import static api.desafio.contaazul.enums.BankSlipStatusEnum.PENDING;
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
+import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import api.desafio.contaazul.dto.InsertedBankSlipDTO;
 import com.jayway.restassured.RestAssured;
@@ -32,16 +34,16 @@ import com.google.gson.reflect.TypeToken;
  */
 public class BankSlipControllerTest {
 
-    private InsertedBankSlipDTO insertedBankSlipDTO = new InsertedBankSlipDTO();
+    private InsertedBankSlipDTO iBSDTO = new InsertedBankSlipDTO();
 
     private Map<String, Object> insertData = new HashMap<>();
 
     @Before
     public void setup() throws Exception {
-        insertedBankSlipDTO.setDue_date(new SimpleDateFormat("yyyy-MM-dd").parse("2018-01-01"));
-        insertedBankSlipDTO.setTotal_in_cents(new BigDecimal(100000));
-        insertedBankSlipDTO.setCustomer("Trillian Company");
-        insertedBankSlipDTO.setStatus(PENDING);
+        iBSDTO.setDue_date(new SimpleDateFormat("yyyy-MM-dd").parse("2018-01-01"));
+        iBSDTO.setTotal_in_cents(new BigDecimal(100000));
+        iBSDTO.setCustomer("Trillian Company");
+        iBSDTO.setStatus(PENDING);
 
         insertData.put("due_date", "2018-01-01");
         insertData.put("total_in_cents", "100000");
@@ -55,10 +57,10 @@ public class BankSlipControllerTest {
                 .contentType("application/json")
                 .when().post("http://localhost:8080/rest/bankslips");
         InsertedBankSlipDTO retDto = new Gson().fromJson(response.asString(), InsertedBankSlipDTO.class);
-        insertedBankSlipDTO.setId(retDto.getId());
+        iBSDTO.setId(retDto.getId());
 
         Assert.assertEquals(response.statusCode(), CREATED.value());
-        Assert.assertEquals(insertedBankSlipDTO, retDto);
+        Assert.assertEquals(iBSDTO, retDto);
     }
 
     @Test
@@ -114,14 +116,69 @@ public class BankSlipControllerTest {
 
     @Test
     public void whenRequestDetailedBankSlip() {
-        List<InsertedBankSlipDTO> insertedBankSlipDTOS = populate();
+        InsertedBankSlipDTO insertedBankSlipDTO = populate().get(0);
         Response response = RestAssured.given()
-                .pathParam("id", insertedBankSlipDTOS.get(0).getId())
+                .pathParam("id", insertedBankSlipDTO.getId())
                 .contentType("application/json")
                 .when().get("http://localhost:8080/rest/bankslips/{id}");
         Assert.assertEquals(response.statusCode(), OK.value());
         Assert.assertEquals(new Gson().fromJson(response.asString(), InsertedBankSlipDTO.class),
-                insertedBankSlipDTOS.get(0));
+                insertedBankSlipDTO);
+    }
+
+    @Test
+    public void whenequestDetailedBankSlipWithRandomId() {
+        RestAssured.given()
+                .pathParam("id", UUID.randomUUID())
+                .contentType("application/json")
+                .when().get("http://localhost:8080/rest/bankslips/{id}").then()
+                .statusCode(NOT_FOUND.value());
+    }
+
+    @Test
+    public void whenMakeAPayment() {
+        InsertedBankSlipDTO insertedBankSlipDTO = populate().get(0);
+
+        Map<String, Object> payment = new HashMap<>();
+        payment.put("payment_date", "2018-06-30");
+        RestAssured.given()
+                .pathParam("id", insertedBankSlipDTO.getId())
+                .body(payment)
+                .contentType("application/json")
+                .when().post("http://localhost:8080/rest/bankslips/{id}/payments").then()
+                .statusCode(NO_CONTENT.value());
+    }
+
+    @Test
+    public void whenTryToMakeAPaymentWithRandomId() {
+        Map<String, Object> payment = new HashMap<>();
+        payment.put("payment_date", "2018-06-30");
+        RestAssured.given()
+                .pathParam("id", UUID.randomUUID())
+                .body(payment)
+                .contentType("application/json")
+                .when().post("http://localhost:8080/rest/bankslips/{id}/payments").then()
+                .statusCode(NOT_FOUND.value());
+    }
+
+    @Test
+    public void whenCancel() {
+        InsertedBankSlipDTO insertedBankSlipDTO = populate().get(0);
+        Map<String, Object> payment = new HashMap<>();
+        RestAssured.given()
+                .pathParam("id", insertedBankSlipDTO.getId())
+                .contentType("application/json")
+                .when().delete("http://localhost:8080/rest/bankslips/{id}").then()
+                .statusCode(NO_CONTENT.value());
+    }
+
+    @Test
+    public void whenTryToCancelWithRandomId() {
+        RestAssured.given()
+                .pathParam("id", UUID.randomUUID())
+                .contentType("application/json")
+                .when().delete("http://localhost:8080/rest/bankslips/{id}").then()
+                .statusCode(NOT_FOUND.value());
     }
 
     private List<InsertedBankSlipDTO> populate() {
@@ -130,10 +187,6 @@ public class BankSlipControllerTest {
         dataToInsert.put("due_date", "2018-01-01");
         dataToInsert.put("total_in_cents", "100000");
         dataToInsert.put("customer", "Ford Prefect Company");
-        insertedBankSlipDTO.add(callInsert(dataToInsert));
-        dataToInsert.put("due_date", "2018-02-01");
-        dataToInsert.put("total_in_cents", "200000");
-        dataToInsert.put("customer", "Zaphod Company");
         insertedBankSlipDTO.add(callInsert(dataToInsert));
         return insertedBankSlipDTO;
     }
