@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1db3d5e4-6d0d-40e2-b9f0-a3cd3bc9026e" name="Default Changelist" comment="" />
+    <list default="true" id="1db3d5e4-6d0d-40e2-b9f0-a3cd3bc9026e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/api/desafio/contaazul/services/impl/BankSlipServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/api/desafio/contaazul/services/impl/BankSlipServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/api/desafio/contaazul/swagger/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/ApiStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/ApiStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/configuration/SwaggerConfig.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,6 +63,19 @@
                 <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DesafioContaAzul" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DesafioContaAzul" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -60,43 +87,45 @@
     <session id="-591537179">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="3" />
-          <entry key="java" value="91" />
-          <entry key="md" value="1" />
+          <entry key="gradle" value="4" />
+          <entry key="java" value="132" />
+          <entry key="md" value="2" />
           <entry key="properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="91" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="132" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="48" />
-          <entry key="gradle" value="37" />
-          <entry key="java" value="5823" />
-          <entry key="md" value="85" />
+          <entry key="dummy" value="100" />
+          <entry key="gradle" value="76" />
+          <entry key="java" value="9071" />
+          <entry key="md" value="92" />
           <entry key="properties" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="37" />
-          <entry key="JAVA" value="5823" />
-          <entry key="PLAIN_TEXT" value="133" />
+          <entry key="Groovy" value="76" />
+          <entry key="JAVA" value="9071" />
+          <entry key="PLAIN_TEXT" value="192" />
           <entry key="Properties" value="56" />
         </counts>
       </usages-collector>
@@ -108,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/ApiStarter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#ApiStarter#0" expanded="true" />
               </folding>
@@ -117,37 +146,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/BankSlipFullDetailsDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="351">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+              <folding>
+                <element signature="docComment;class#BankSlipFullDetailsDTO#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/BankSlipController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="921">
+              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/swagger/SwaggerConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/api/desafio/contaazul/unitTest/BankSlipServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="175" lean-forward="true" selection-start-line="12" selection-start-column="175" selection-end-line="12" selection-end-column="175" />
+            <state relative-caret-position="335">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#3271#3272#0" expanded="true" />
+                <element signature="e#3337#3338#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="-869">
+              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/repository/BankSlipRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/BankSlipService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="360">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding>
+                <element signature="docComment;class#BankSlipService#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/entitys/BankSlipEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -169,10 +226,14 @@
       <find>log.info(&quot;I=Inserting on bank new bankSlipEntity={}&quot;, bankSlipEntity);</find>
       <find>&lt;br/&gt;</find>
       <find>@aut</find>
+      <find>bankSlipServiceTest.findById(id)</find>
     </findStrings>
     <replaceStrings>
       <replace>bankSlipEntities.</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -352,9 +413,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6163639876000" />
+        <entry key="$PROJECT_DIR$" value="6163702543000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2519622562" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1925074354" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1033972711" />
       </map>
@@ -565,26 +626,34 @@
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/PatymentDataDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/PaymentDataDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/BankSlipService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/BankSlipNotProvidedException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/repository/BankSlipRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/InsertedBankSlipDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/BankSlipFullDetailsDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/BankSlipNotFoundException.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/api/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/api/ApiStarter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/BankSlipController.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/ApiDocumentationConfiguration.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/ApiStarter.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/swagger/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/swagger/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/api/desafio/contaazul/teste.java" />
+        <option value="$PROJECT_DIR$/src/test/java/api/desafio/contaazul/CardExtract.java" />
+        <option value="$PROJECT_DIR$/src/test/java/api/desafio/contaazul/unitTest/CardExtract.java" />
+        <option value="$PROJECT_DIR$/src/test/java/api/desafio/contaazul/unitTest/BankSlipRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/configuration/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/configuration/DataBaseConfig.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/repository/BankSlipRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/api/desafio/contaazul/unitTest/BankSlipRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/api/desafio/contaazul/unitTest/BankSlipServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/BankSlipController.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1970" />
     <option name="y" value="70" />
     <option name="width" value="1392" />
@@ -629,13 +698,12 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -669,10 +737,60 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="contaazul" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DesafioContaAzul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesafioContaAzul" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="contaazul" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesafioContaAzul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesafioContaAzul" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="contaazul" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesafioContaAzul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesafioContaAzul" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesafioContaAzul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesafioContaAzul" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesafioContaAzul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesafioContaAzul" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="contaazul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesafioContaAzul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesafioContaAzul" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="contaazul" type="462c0819:PsiDirectoryNode" />
+              <item name="unitTest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -683,12 +801,15 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540928453818" />
+    <property name="SearchEverywhereHistoryKey" value="BankSlipServiceImpl&#9;FILE&#9;file:///home/gscarabelo/workspace/DesafioContaAzul/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541003258471" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Project_Default.xml" />
+    <property name="run.code.analysis.last.selected.profile" value="aProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="api.desafio.contaazul.configuration" />
       <recent name="api.desafio.contaazul.exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -707,7 +828,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BankSlipServiceTest.whenDatailsHasPaymentDateAfterTenDays">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -730,6 +851,74 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateAfterTenDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesafioContaAzul_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.desafio.contaazul.unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.desafio.contaazul.unitTest" />
+      <option name="MAIN_CLASS_NAME" value="api.desafio.contaazul.unitTest.BankSlipServiceTest" />
+      <option name="METHOD_NAME" value="whenDatailsHasPaymentDateAfterTenDays" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateBeforeTenDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesafioContaAzul_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.desafio.contaazul.unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.desafio.contaazul.unitTest" />
+      <option name="MAIN_CLASS_NAME" value="api.desafio.contaazul.unitTest.BankSlipServiceTest" />
+      <option name="METHOD_NAME" value="whenDatailsHasPaymentDateBeforeTenDays" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankSlipServiceTest.whenDetailsHasAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesafioContaAzul_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.desafio.contaazul.unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.desafio.contaazul.unitTest" />
+      <option name="MAIN_CLASS_NAME" value="api.desafio.contaazul.unitTest.BankSlipServiceTest" />
+      <option name="METHOD_NAME" value="whenDetailsHasAllData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankSlipServiceTest.whenPaymentNotFindId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesafioContaAzul_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.desafio.contaazul.unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.desafio.contaazul.unitTest" />
+      <option name="MAIN_CLASS_NAME" value="api.desafio.contaazul.unitTest.BankSlipServiceTest" />
+      <option name="METHOD_NAME" value="whenPaymentNotFindId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -757,9 +946,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ApiStarter" />
+      <item itemvalue="JUnit.BankSlipServiceTest.whenPaymentNotFindId" />
+      <item itemvalue="JUnit.BankSlipServiceTest.whenDetailsHasAllData" />
+      <item itemvalue="JUnit.BankSlipServiceTest.whenDatailsHasPaymentDateBeforeTenDays" />
+      <item itemvalue="JUnit.BankSlipServiceTest.whenDatailsHasPaymentDateAfterTenDays" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BankSlipServiceTest.whenDatailsHasPaymentDateAfterTenDays" />
+        <item itemvalue="JUnit.BankSlipServiceTest.whenDatailsHasPaymentDateBeforeTenDays" />
+        <item itemvalue="JUnit.BankSlipServiceTest.whenDetailsHasAllData" />
         <item itemvalue="Application.ApiStarter" />
+        <item itemvalue="JUnit.BankSlipServiceTest.whenPaymentNotFindId" />
       </list>
     </recent_temporary>
   </component>
@@ -776,10 +976,43 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BankSlipServiceTest_whenPaymentNotFindId - 2018.10.31 at 13h 53m 45s.xml">
+      <configuration name="BankSlipServiceTest.whenPaymentNotFindId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenPaymentNotFindId - 2018.10.31 at 13h 57m 06s.xml">
+      <configuration name="BankSlipServiceTest.whenPaymentNotFindId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenPaymentNotFindId - 2018.10.31 at 13h 57m 46s.xml">
+      <configuration name="BankSlipServiceTest.whenPaymentNotFindId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDetailsHasAllData - 2018.10.31 at 14h 08m 36s.xml">
+      <configuration name="BankSlipServiceTest.whenDetailsHasAllData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDetailsHasAllData - 2018.10.31 at 14h 09m 05s.xml">
+      <configuration name="BankSlipServiceTest.whenDetailsHasAllData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDatailsHasPaymentDateBeforeTenDays - 2018.10.31 at 14h 15m 47s.xml">
+      <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateBeforeTenDays" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDatailsHasPaymentDateBeforeTenDays - 2018.10.31 at 14h 18m 24s.xml">
+      <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateBeforeTenDays" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDatailsHasPaymentDateBeforeTenDays - 2018.10.31 at 14h 18m 36s.xml">
+      <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateBeforeTenDays" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDatailsHasPaymentDateAfterTenDays - 2018.10.31 at 14h 19m 03s.xml">
+      <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateAfterTenDays" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankSlipServiceTest_whenDatailsHasPaymentDateAfterTenDays - 2018.10.31 at 14h 19m 17s.xml">
+      <configuration name="BankSlipServiceTest.whenDatailsHasPaymentDateAfterTenDays" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1922" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1814301" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18783352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -787,17 +1020,17 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978564" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32832617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.30546623" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -809,7 +1042,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1814301" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18783352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -817,17 +1050,17 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39978564" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32832617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32939914" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.30546623" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -846,10 +1079,52 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/swagger/SwaggerConfig.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/InsertedBankSlipDTO.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>123</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -860,47 +1135,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>total_in_cents.multiply(new BigDecimal(&quot;0.001&quot;)).setScale(0, RoundingMode.UP)</expression-string>
+        <expression-string>new BankSlipFullDetailsDTO(bankSlipEntity)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>total_in_cents.multiply(new BigDecimal(&quot;0.001&quot;)).setScale(1, RoundingMode.UP)</expression-string>
+        <expression-string>bankSlipEntity.isPresent()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>total_in_cents.multiply(new BigDecimal(&quot;0.001&quot;)).setScale(10, RoundingMode.UP)</expression-string>
+        <expression-string>bankSlipRepository.findById(id)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>total_in_cents.multiply(new BigDecimal(&quot;0.001&quot;)).setScale(2, RoundingMode.UP)</expression-string>
+        <expression-string>bankSlipRepository.findById(null)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>total_in_cents.multiply(new BigDecimal(&quot;0.01&quot;)).setScale(2, RoundingMode.UP)</expression-string>
+        <expression-string>bankSlipRepository</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>bankSlipEntity.getPayment_date()</expression-string>
+        <expression-string>bankSlipRepository.findById(id</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>bankSlipEntity.getPayment_date() == null</expression-string>
+        <expression-string>Assert.assertEquals(bankSlipService.listAllBankSlips().get(0).getClass(), BankSlipFullDetailsDTO.class)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>TimeUnit.MILLISECONDS.toDays((payment_date.getTime() - due_date.getTime()))</expression-string>
+        <expression-string>bankSlipEntity</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>TimeUnit.MILLISECONDS.toDays(( payment_date.getTime() - due_date.getTime()))</expression-string>
+        <expression-string>bankSlipServiceTest.save(bankSlipEntity);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -915,13 +1190,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/EmployeeNotFoundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="191" lean-forward="true" selection-start-line="9" selection-start-column="191" selection-end-line="9" selection-end-column="191" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/EmployeeNotFoundAdvice.java" />
     <entry file="jar:///opt/jdk1.8.0_144/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -943,13 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.10.RELEASE/b7c6de4b7a506d67f608113b6ecf21091b927002/spring-data-commons-2.0.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.8.RELEASE/c8c58315f925ae04ff692fed6aa3cb4ab966e43b/spring-web-5.0.8.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -964,27 +1226,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/CheckCaseValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/MyNotNull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="27" column="78" lean-forward="true" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#1657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/CheckCaseValidator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/exceptions/MyNotNull.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1010,49 +1253,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1816">
-          <caret line="127" column="125" lean-forward="true" selection-start-line="127" selection-start-column="125" selection-end-line="127" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/NewBankSlipDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="docComment;class#NewBankSlipDTO#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/PaymentDataDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" selection-start-line="8" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/entitys/BankSlipEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="docComment;class#BankSlipEntity#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/enums/BankSlipStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="docComment;class#BankSlipStatusEnum#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,9 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#BankSlipNotProvidedException#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,30 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="docComment;class#InvalidBankSlipException#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/InsertedBankSlipDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/BankSlipService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/BankSlipFullDetailsDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1101,68 +1278,177 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/ApiDocumentationConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/enums/BankSlipStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/desafio/contaazul/teste.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/configuration/DataBaseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.2.RELEASE/7f8ba1aa5c6cc053e1ac6d68ab677e08b0870bc3/spring-test-5.1.2.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/InsertedBankSlipDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding>
-            <element signature="docComment;class#BankSlipNotFoundException#0" expanded="true" />
+            <element signature="docComment;class#InsertedBankSlipDTO#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/swagger/SwaggerConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/configuration/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/BankSlipController.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.2.RELEASE/7f8ba1aa5c6cc053e1ac6d68ab677e08b0870bc3/spring-test-5.1.2.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        <state relative-caret-position="219">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/ApiDocumentationConfiguration.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/repository/BankSlipRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="178">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/ApiStarter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#ApiStarter#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/swagger/SwaggerConfig.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.10.RELEASE/b7c6de4b7a506d67f608113b6ecf21091b927002/spring-data-commons-2.0.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="175" lean-forward="true" selection-start-line="12" selection-start-column="175" selection-end-line="12" selection-end-column="175" />
+        <state relative-caret-position="192">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/repository/BankSlipRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/PaymentDataDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="docComment;class#PaymentDataDTO#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/entitys/BankSlipEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/BankSlipService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#BankSlipService#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/dto/BankSlipFullDetailsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="docComment;class#BankSlipFullDetailsDTO#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/controllers/BankSlipController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/desafio/contaazul/services/impl/BankSlipServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-869">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/desafio/contaazul/unitTest/BankSlipServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#3271#3272#0" expanded="true" />
+            <element signature="e#3337#3338#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

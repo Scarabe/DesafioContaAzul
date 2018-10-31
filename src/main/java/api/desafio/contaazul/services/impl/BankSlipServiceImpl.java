@@ -1,5 +1,9 @@
 package api.desafio.contaazul.services.impl;
 
+import static api.desafio.contaazul.enums.BankSlipStatusEnum.CANCELED;
+import static api.desafio.contaazul.enums.BankSlipStatusEnum.PAID;
+import static api.desafio.contaazul.enums.BankSlipStatusEnum.PENDING;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
@@ -14,7 +18,6 @@ import api.desafio.contaazul.dto.InsertedBankSlipDTO;
 import api.desafio.contaazul.dto.NewBankSlipDTO;
 import api.desafio.contaazul.dto.PaymentDataDTO;
 import api.desafio.contaazul.entitys.BankSlipEntity;
-import api.desafio.contaazul.enums.BankSlipStatusEnum;
 import api.desafio.contaazul.exceptions.BankSlipNotFoundException;
 import api.desafio.contaazul.exceptions.BankSlipNotProvidedException;
 import api.desafio.contaazul.exceptions.InvalidBankSlipException;
@@ -41,10 +44,10 @@ public class BankSlipServiceImpl implements BankSlipService {
         validateNewBankSlip(newBankSlip);
         BankSlipEntity bankSlipEntity = new BankSlipEntity(UUID.randomUUID(), newBankSlip.getDue_date(),
                 newBankSlip.getTotal_in_cents(), newBankSlip.getCustomer(),
-                BankSlipStatusEnum.PENDING);
+                PENDING);
         log.info("I=Inserting on bank, bankSlipEntity={}", bankSlipEntity);
-        bankSlipRepository.save(bankSlipEntity);
-        return new InsertedBankSlipDTO(bankSlipEntity);
+        BankSlipEntity savedBankSlipEntity = bankSlipRepository.save(bankSlipEntity);
+        return new InsertedBankSlipDTO(savedBankSlipEntity);
     }
 
     @Override
@@ -67,7 +70,7 @@ public class BankSlipServiceImpl implements BankSlipService {
     public void payBankSlip (final UUID id, final PaymentDataDTO paymentDate) {
         log.info("I=Paing one bank slip, id={}", id);
         BankSlipEntity bankSlipEntity = getBankSlipById(id);
-        bankSlipEntity.setStatus(BankSlipStatusEnum.PAID);
+        bankSlipEntity.setStatus(PAID);
         log.info("I=Verifing if bank slip already have payment date, bankSlipEntity={}", bankSlipEntity);
         if (bankSlipEntity.getPayment_date() == null) {
             bankSlipEntity.setPayment_date(paymentDate.getPayment_date());
@@ -79,7 +82,7 @@ public class BankSlipServiceImpl implements BankSlipService {
     public void cancelPaymentSlip (final UUID id) {
         log.info("I=Cancelling bank slip, id={}", id);
         BankSlipEntity bankSlipEntity = getBankSlipById(id);
-        bankSlipEntity.setStatus(BankSlipStatusEnum.CANCELED);
+        bankSlipEntity.setStatus(CANCELED);
         bankSlipRepository.save(bankSlipEntity);
     }
 
@@ -118,7 +121,7 @@ public class BankSlipServiceImpl implements BankSlipService {
     private BankSlipEntity getBankSlipById (final UUID id) {
         log.info("I=Getting bank splip, id={}", id);
         Optional<BankSlipEntity> bankSlipEntity = bankSlipRepository.findById(id);
-        if (bankSlipEntity.isPresent()) {
+        if (id != null && bankSlipEntity.isPresent()) {
             return bankSlipEntity.get();
         } else {
             throw new BankSlipNotFoundException();
@@ -131,7 +134,7 @@ public class BankSlipServiceImpl implements BankSlipService {
             log.error("E=Bank slip not provided, invalid request, newBankSlip=null");
             throw new BankSlipNotProvidedException();
         }
-        if (newBankSlip.getDue_date() == null || newBankSlip.getTotal_in_cents() == null
+        if (newBankSlip.getCustomer() == null || newBankSlip.getTotal_in_cents() == null
                 || newBankSlip.getDue_date() == null) {
             log.error("E=Invalid bank slip, newBankSlip={}", newBankSlip);
             throw new InvalidBankSlipException();

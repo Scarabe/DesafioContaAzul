@@ -1,4 +1,4 @@
-package api.desafio.contaazul.swagger;
+package api.desafio.contaazul.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,5 +20,4 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any())
                 .build();
     }
-
 }

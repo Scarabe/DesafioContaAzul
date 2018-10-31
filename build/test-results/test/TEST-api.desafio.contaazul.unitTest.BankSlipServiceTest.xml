@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="api.desafio.contaazul.unitTest.BankSlipServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-10-31T16:25:56" hostname="s2it-uol-0027" time="0.039">
+  <properties/>
+  <testcase name="wheNullBodyOnInsertionRequest" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.01"/>
+  <testcase name="whenNullTotalInCents" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.003"/>
+  <testcase name="whenListBankLisp" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.011"/>
+  <testcase name="whenDetailsHasAllData" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.003"/>
+  <testcase name="whenPaymentReceiveNullData" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.001"/>
+  <testcase name="whenNullCustomer" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.001"/>
+  <testcase name="whenDatailsHasPaymentDateBeforeTenDays" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.002"/>
+  <testcase name="whenDatailsHasPaymentDateAfterTenDays" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.001"/>
+  <testcase name="whenNullDueDate" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.0"/>
+  <testcase name="whenPaymentHasAllData" classname="api.desafio.contaazul.unitTest.BankSlipServiceTest" time="0.001"/>
+  <system-out><![CDATA[13:25:56.042 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Inserting newBankSlip=null
+13:25:56.046 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Validating newBankSlip=null
+13:25:56.046 [Test worker] ERROR api.desafio.contaazul.services.impl.BankSlipServiceImpl - E=Bank slip not provided, invalid request, newBankSlip=null
+13:25:56.048 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Inserting newBankSlip=NewBankSlipDTO(due_date=Mon Jan 01 00:00:00 BRST 1990, total_in_cents=null, customer=Customer test)
+13:25:56.050 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Validating newBankSlip=NewBankSlipDTO(due_date=Mon Jan 01 00:00:00 BRST 1990, total_in_cents=null, customer=Customer test)
+13:25:56.050 [Test worker] ERROR api.desafio.contaazul.services.impl.BankSlipServiceImpl - E=Invalid bank slip, newBankSlip=NewBankSlipDTO(due_date=Mon Jan 01 00:00:00 BRST 1990, total_in_cents=null, customer=Customer test)
+13:25:56.060 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Listing all bank slips
+13:25:56.061 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Converting list of entity to dto, bankSlipEntities=[BankSlipEntity(id=f4a38614-f0fc-42f1-bf98-c8a7ed0351cb, due_date=Mon Jan 01 00:00:00 BRST 1990, payment_date=null, total_in_cents=250, customer=Customer test, status=null)]
+13:25:56.062 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Calculating fine value, due_date=Mon Jan 01 00:00:00 BRST 1990, payment_date=null
+13:25:56.065 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank slip with deteils by, id=c58f7bac-44a0-40bf-b395-53cbd6624918
+13:25:56.065 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank splip, id=c58f7bac-44a0-40bf-b395-53cbd6624918
+13:25:56.066 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Calculating fine value, due_date=Mon Jan 01 00:00:00 BRST 1990, payment_date=null
+13:25:56.067 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Paing one bank slip, id=null
+13:25:56.067 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank splip, id=null
+13:25:56.069 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Inserting newBankSlip=NewBankSlipDTO(due_date=Mon Jan 01 00:00:00 BRST 1990, total_in_cents=250, customer=null)
+13:25:56.069 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Validating newBankSlip=NewBankSlipDTO(due_date=Mon Jan 01 00:00:00 BRST 1990, total_in_cents=250, customer=null)
+13:25:56.069 [Test worker] ERROR api.desafio.contaazul.services.impl.BankSlipServiceImpl - E=Invalid bank slip, newBankSlip=NewBankSlipDTO(due_date=Mon Jan 01 00:00:00 BRST 1990, total_in_cents=250, customer=null)
+13:25:56.070 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank slip with deteils by, id=bbd9e0c7-ad75-4f8d-b155-ac7692784e9c
+13:25:56.071 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank splip, id=bbd9e0c7-ad75-4f8d-b155-ac7692784e9c
+13:25:56.071 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Calculating fine value, due_date=Mon Jan 01 00:00:00 BRST 1990, payment_date=Fri Jan 05 00:00:00 BRST 1990
+13:25:56.072 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank slip with deteils by, id=bd546992-8ec4-48b2-bf78-15a7162a40b9
+13:25:56.072 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank splip, id=bd546992-8ec4-48b2-bf78-15a7162a40b9
+13:25:56.073 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Calculating fine value, due_date=Mon Jan 01 00:00:00 BRST 1990, payment_date=Thu Jan 11 00:00:00 BRST 1990
+13:25:56.073 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Inserting newBankSlip=NewBankSlipDTO(due_date=null, total_in_cents=250, customer=Customer test)
+13:25:56.074 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Validating newBankSlip=NewBankSlipDTO(due_date=null, total_in_cents=250, customer=Customer test)
+13:25:56.074 [Test worker] ERROR api.desafio.contaazul.services.impl.BankSlipServiceImpl - E=Invalid bank slip, newBankSlip=NewBankSlipDTO(due_date=null, total_in_cents=250, customer=Customer test)
+13:25:56.075 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Paing one bank slip, id=cb0387e2-bcea-4f0d-8c48-9f2cfc6fc291
+13:25:56.075 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Getting bank splip, id=cb0387e2-bcea-4f0d-8c48-9f2cfc6fc291
+13:25:56.075 [Test worker] INFO api.desafio.contaazul.services.impl.BankSlipServiceImpl - I=Verifing if bank slip already have payment date, bankSlipEntity=BankSlipEntity(id=cb0387e2-bcea-4f0d-8c48-9f2cfc6fc291, due_date=Mon Jan 01 00:00:00 BRST 1990, payment_date=Fri Jan 05 00:00:00 BRST 1990, total_in_cents=250, customer=Customer test, status=PAID)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
