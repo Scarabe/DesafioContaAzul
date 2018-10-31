@@ -38,7 +38,7 @@ public class BankSlipController {
     @ApiOperation(value = "Insert new bank slip")
     @RequestMapping(value = "/bankslips", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<InsertedBankSlipDTO> insertNewBankSlip (
+    public ResponseEntity<InsertedBankSlipDTO> insertNewBankSlip(
             @RequestBody(required = false) final NewBankSlipDTO newBankSlip) {
         log.info("I=Inserting new bank slip");
         return ResponseEntity.status(HttpStatus.CREATED)
@@ -48,7 +48,7 @@ public class BankSlipController {
     @ApiOperation(value = "List all bank slips")
     @RequestMapping(value = "/bankslips/", method = RequestMethod.GET)
     @ResponseBody
-    public ResponseEntity<List<BankSlipFullDetailsDTO>> listBankSlips () {
+    public ResponseEntity<List<BankSlipFullDetailsDTO>> listBankSlips() {
         log.info("I=Returning all bank slips");
         return ResponseEntity.status(HttpStatus.OK)
                 .body(bankSlipService.listAllBankSlips());
@@ -66,7 +66,7 @@ public class BankSlipController {
     @ApiOperation(value = "Pay a bank slip")
     @RequestMapping(value = "/bankslips/{id}/payments", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity bankSplipPayment (@PathVariable(value = "id") final UUID id,
+    public ResponseEntity bankSplipPayment(@PathVariable(value = "id") final UUID id,
             @RequestBody final PaymentDataDTO payment_date) {
         log.info("I=Returning all bank slips");
         bankSlipService.payBankSlip(id, payment_date);
@@ -76,7 +76,7 @@ public class BankSlipController {
     @ApiOperation(value = "Cancel one bank slip")
     @RequestMapping(value = "/bankslips/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public ResponseEntity<String> deleteBankSlip (@PathVariable(value = "id") final UUID id) {
+    public ResponseEntity<String> deleteBankSlip(@PathVariable(value = "id") final UUID id) {
         log.info("I=Returning all bank slips");
         bankSlipService.cancelPaymentSlip(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Bankslip canceled");
