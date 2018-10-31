@@ -14,13 +14,13 @@ import api.desafio.contaazul.dto.PaymentDataDTO;
  */
 public interface BankSlipService {
 
-    InsertedBankSlipDTO validateAndInsertNewBankSlip (final NewBankSlipDTO newBankSlip);
+    InsertedBankSlipDTO validateAndInsertNewBankSlip(final NewBankSlipDTO newBankSlip);
 
-    List<BankSlipFullDetailsDTO> listAllBankSlips ();
+    List<BankSlipFullDetailsDTO> listAllBankSlips();
 
-    BankSlipFullDetailsDTO getBankSlipDetails (final UUID id);
+    BankSlipFullDetailsDTO getBankSlipDetails(final UUID id);
 
-    void payBankSlip (final UUID id, final PaymentDataDTO paymentDate);
+    void payBankSlip(final UUID id, final PaymentDataDTO paymentDate);
 
-    void cancelPaymentSlip (final UUID id);
+    void cancelPaymentSlip(final UUID id);
 }

@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableAutoConfiguration
 public class ApiStarter {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(ApiStarter.class);
     }
 

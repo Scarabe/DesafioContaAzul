@@ -4,10 +4,12 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import api.desafio.contaazul.entitys.BankSlipEntity;
 import api.desafio.contaazul.enums.BankSlipStatusEnum;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -16,6 +18,7 @@ import lombok.ToString;
  */
 @Data
 @ToString
+@NoArgsConstructor
 public class InsertedBankSlipDTO {
 
     private UUID id;
@@ -29,7 +32,7 @@ public class InsertedBankSlipDTO {
 
     private BankSlipStatusEnum status;
 
-    public InsertedBankSlipDTO (BankSlipEntity bankSlipEntity) {
+    public InsertedBankSlipDTO(BankSlipEntity bankSlipEntity) {
         this.id = bankSlipEntity.getId();
         this.due_date = bankSlipEntity.getDue_date();
         this.total_in_cents = bankSlipEntity.getTotal_in_cents();

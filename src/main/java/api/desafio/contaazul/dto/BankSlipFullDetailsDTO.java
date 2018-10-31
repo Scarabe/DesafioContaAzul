@@ -31,7 +31,7 @@ public class BankSlipFullDetailsDTO {
 
     private BigDecimal fine;
 
-    public BankSlipFullDetailsDTO (BankSlipEntity bankSlipEntities) {
+    public BankSlipFullDetailsDTO(BankSlipEntity bankSlipEntities) {
         this.id = bankSlipEntities.getId();
         this.due_date = bankSlipEntities.getDue_date();
         this.payment_date = bankSlipEntities.getPayment_date();

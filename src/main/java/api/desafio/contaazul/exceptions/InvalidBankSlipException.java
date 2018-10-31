@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
 public class InvalidBankSlipException extends RuntimeException {
 
-    public InvalidBankSlipException () {
+    public InvalidBankSlipException() {
         super("Invalid bankslip provided.The possible reasons are:"
                 + " A field of the provided bankslip was null or with invalid values");
     }

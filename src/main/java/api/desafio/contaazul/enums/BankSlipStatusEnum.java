@@ -6,16 +6,16 @@ package api.desafio.contaazul.enums;
  */
 public enum BankSlipStatusEnum {
     PENDING("pending"), //
-    PAID("paid"),
+    PAID("paid"), //
     CANCELED("canceled");
 
     private final String description;
 
-    BankSlipStatusEnum (final String description) {
+    BankSlipStatusEnum(final String description) {
         this.description = description;
     }
 
-    public String getDescription () {
+    public String getDescription() {
         return description;
     }
 }

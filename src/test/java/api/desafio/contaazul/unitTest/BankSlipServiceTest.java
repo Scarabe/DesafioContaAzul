@@ -12,6 +12,15 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.runners.MockitoJUnitRunner;
+
 import api.desafio.contaazul.dto.BankSlipFullDetailsDTO;
 import api.desafio.contaazul.dto.NewBankSlipDTO;
 import api.desafio.contaazul.dto.PaymentDataDTO;
@@ -22,15 +31,13 @@ import api.desafio.contaazul.exceptions.InvalidBankSlipException;
 import api.desafio.contaazul.repository.BankSlipRepository;
 import api.desafio.contaazul.services.BankSlipService;
 import api.desafio.contaazul.services.impl.BankSlipServiceImpl;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.runners.MockitoJUnitRunner;
 
+/**
+ * @author gscarabelo
+ * @version $Revision: $<br/>
+ *          $Id: $
+ * @since 10/31/18 12:02 PM
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class BankSlipServiceTest {
 
@@ -47,7 +54,7 @@ public class BankSlipServiceTest {
     private UUID id;
 
     @Before
-    public void setup () throws Exception {
+    public void setup() throws Exception {
         id = UUID.randomUUID();
 
         newBankSlipDTO.setCustomer("Customer test");
@@ -62,7 +69,7 @@ public class BankSlipServiceTest {
     }
 
     @Test
-    public void whenListBankLisp () {
+    public void whenListBankLisp() {
         List<BankSlipEntity> bankSlipEntities = new ArrayList<>();
         bankSlipEntities.add(bankSlipEntity);
         Mockito.when(bankSlipRepository.findAll()).thenReturn(bankSlipEntities);
@@ -70,13 +77,13 @@ public class BankSlipServiceTest {
     }
 
     @Test
-    public void whenDetailsHasAllData () {
+    public void whenDetailsHasAllData() {
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         Assert.assertEquals(bankSlipService.getBankSlipDetails(id), new BankSlipFullDetailsDTO(bankSlipEntity));
     }
 
     @Test
-    public void whenDatailsHasPaymentDateBeforeTenDays () throws ParseException {
+    public void whenDatailsHasPaymentDateBeforeTenDays() throws ParseException {
         bankSlipEntity.setPayment_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-05"));
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new BankSlipFullDetailsDTO(bankSlipEntity);
@@ -86,7 +93,7 @@ public class BankSlipServiceTest {
     }
 
     @Test
-    public void whenDatailsHasPaymentDateAfterTenDays () throws ParseException {
+    public void whenDatailsHasPaymentDateAfterTenDays() throws ParseException {
         bankSlipEntity.setPayment_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-11"));
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new BankSlipFullDetailsDTO(bankSlipEntity);
@@ -96,13 +103,13 @@ public class BankSlipServiceTest {
     }
 
     @Test
-    public void whenCancelPaymentHasAllData () {
+    public void whenCancelPaymentHasAllData() {
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         bankSlipService.cancelPaymentSlip(id);
     }
 
     @Test
-    public void whenPaymentHasAllData () throws ParseException {
+    public void whenPaymentHasAllData() throws ParseException {
         Date payment = new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-05");
         bankSlipEntity.setPayment_date(payment);
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
@@ -110,30 +117,30 @@ public class BankSlipServiceTest {
     }
 
     @Test(expected = BankSlipNotFoundException.class)
-    public void whenPaymentReceiveNullData () {
+    public void whenPaymentReceiveNullData() {
         Mockito.when(bankSlipRepository.findById((Long) null)).thenReturn(Optional.empty());
         bankSlipService.payBankSlip(null, null);
     }
 
     @Test(expected = BankSlipNotProvidedException.class)
-    public void wheNullBodyOnInsertionRequest () {
+    public void wheNullBodyOnInsertionRequest() {
         bankSlipService.validateAndInsertNewBankSlip(null);
     }
 
     @Test(expected = InvalidBankSlipException.class)
-    public void whenNullCustomer () {
+    public void whenNullCustomer() {
         newBankSlipDTO.setCustomer(null);
         bankSlipService.validateAndInsertNewBankSlip(newBankSlipDTO);
     }
 
     @Test(expected = InvalidBankSlipException.class)
-    public void whenNullDueDate () {
+    public void whenNullDueDate() {
         newBankSlipDTO.setDue_date(null);
         bankSlipService.validateAndInsertNewBankSlip(newBankSlipDTO);
     }
 
     @Test(expected = InvalidBankSlipException.class)
-    public void whenNullTotalInCents () {
+    public void whenNullTotalInCents() {
         newBankSlipDTO.setTotal_in_cents(null);
         bankSlipService.validateAndInsertNewBankSlip(newBankSlipDTO);
     }

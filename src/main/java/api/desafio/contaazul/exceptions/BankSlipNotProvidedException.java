@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class BankSlipNotProvidedException extends RuntimeException {
 
-    public BankSlipNotProvidedException () {
+    public BankSlipNotProvidedException() {
         super("Bankslip not provided in the request body");
     }
 
