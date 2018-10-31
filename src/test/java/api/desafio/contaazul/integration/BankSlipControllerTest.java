@@ -90,7 +90,7 @@ public class BankSlipControllerTest {
     }
 
     @Test
-    public void wheInsertHasDateHasNullData() {
+    public void whenInsertHasDateHasNullData() {
         insertData.put("due_date", null);
         RestAssured.given()
                 .body(insertData)
@@ -112,23 +112,37 @@ public class BankSlipControllerTest {
         Assert.assertTrue(retDto.size() >= 2);
     }
 
-    private void populate() {
+    @Test
+    public void whenRequestDetailedBankSlip() {
+        List<InsertedBankSlipDTO> insertedBankSlipDTOS = populate();
+        Response response = RestAssured.given()
+                .pathParam("id", insertedBankSlipDTOS.get(0).getId())
+                .contentType("application/json")
+                .when().get("http://localhost:8080/rest/bankslips/{id}");
+        Assert.assertEquals(response.statusCode(), OK.value());
+        Assert.assertEquals(new Gson().fromJson(response.asString(), InsertedBankSlipDTO.class),
+                insertedBankSlipDTOS.get(0));
+    }
+
+    private List<InsertedBankSlipDTO> populate() {
+        List<InsertedBankSlipDTO> insertedBankSlipDTO = new ArrayList<>();
         Map<String, Object> dataToInsert = new HashMap<>();
         dataToInsert.put("due_date", "2018-01-01");
         dataToInsert.put("total_in_cents", "100000");
         dataToInsert.put("customer", "Ford Prefect Company");
-        callInsert(dataToInsert);
-
+        insertedBankSlipDTO.add(callInsert(dataToInsert));
         dataToInsert.put("due_date", "2018-02-01");
         dataToInsert.put("total_in_cents", "200000");
         dataToInsert.put("customer", "Zaphod Company");
-        callInsert(dataToInsert);
+        insertedBankSlipDTO.add(callInsert(dataToInsert));
+        return insertedBankSlipDTO;
     }
 
-    private void callInsert(Map<String, Object> dataToInsert) {
-        RestAssured.given()
+    private InsertedBankSlipDTO callInsert(Map<String, Object> dataToInsert) {
+        Response response = RestAssured.given()
                 .body(dataToInsert)
                 .contentType("application/json")
                 .when().post("http://localhost:8080/rest/bankslips");
+        return new Gson().fromJson(response.asString(), InsertedBankSlipDTO.class);
     }
 }
