@@ -96,6 +96,12 @@ public class BankSlipServiceTest {
     }
 
     @Test
+    public void whenCancelPaymentHasAllData () {
+        Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
+        bankSlipService.cancelPaymentSlip(id);
+    }
+
+    @Test
     public void whenPaymentHasAllData () throws ParseException {
         Date payment = new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-05");
         bankSlipEntity.setPayment_date(payment);
