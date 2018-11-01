@@ -35,7 +35,7 @@ import com.google.gson.reflect.TypeToken;
  *          $Id: $
  * @since 10/31/18 3:02 PM
  */
-public class BankSlipControllerTest {
+public class BankSlipIntegration {
 
     private Map<String, Object> insertData = new HashMap<>();
 
