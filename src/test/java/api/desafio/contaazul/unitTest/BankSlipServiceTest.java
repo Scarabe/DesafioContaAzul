@@ -54,7 +54,7 @@ public class BankSlipServiceTest {
     private UUID id;
 
     @Before
-    public void setup() throws Exception {
+    public void setUp() throws Exception {
         id = UUID.randomUUID();
 
         newBankSlipDTO.setCustomer("Customer test");

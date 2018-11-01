@@ -37,17 +37,17 @@ import lombok.extern.slf4j.Slf4j;
 public class BankSlipServiceImpl implements BankSlipService {
 
     @Autowired
-    BankSlipRepository bankSlipRepository;
+    private BankSlipRepository bankSlipRepository;
 
     @Override
     public InsertedBankSlipDTO validateAndInsertNewBankSlip(final NewBankSlipDTO newBankSlip) {
         log.info("I=Inserting newBankSlip={}", newBankSlip);
         validateNewBankSlip(newBankSlip);
-        BankSlipEntity bankSlipEntity = new BankSlipEntity(UUID.randomUUID(), newBankSlip.getDue_date(),
+        final BankSlipEntity bankSlipEntity = new BankSlipEntity(UUID.randomUUID(), newBankSlip.getDue_date(),
                 newBankSlip.getTotal_in_cents(), newBankSlip.getCustomer(),
                 PENDING);
         log.info("I=Inserting on bank, bankSlipEntity={}", bankSlipEntity);
-        BankSlipEntity savedBankSlipEntity = bankSlipRepository.save(bankSlipEntity);
+        final BankSlipEntity savedBankSlipEntity = bankSlipRepository.save(bankSlipEntity);
         return new InsertedBankSlipDTO(savedBankSlipEntity);
     }
 
@@ -60,8 +60,8 @@ public class BankSlipServiceImpl implements BankSlipService {
     @Override
     public BankSlipFullDetailsDTO getBankSlipDetails(final UUID id) {
         log.info("I=Getting bank slip with deteils by, id={}", id);
-        BankSlipEntity bankSlipEntity = getBankSlipById(id);
-        BankSlipFullDetailsDTO bankSlip = new BankSlipFullDetailsDTO(bankSlipEntity);
+        final BankSlipEntity bankSlipEntity = getBankSlipById(id);
+        final BankSlipFullDetailsDTO bankSlip = new BankSlipFullDetailsDTO(bankSlipEntity);
         bankSlip.setFine(
                 calculateFine(bankSlip.getDue_date(), bankSlip.getPayment_date(), bankSlip.getTotal_in_cents()));
         return bankSlip;
@@ -70,7 +70,7 @@ public class BankSlipServiceImpl implements BankSlipService {
     @Override
     public void payBankSlip(final UUID id, final PaymentDataDTO paymentDate) {
         log.info("I=Paing one bank slip, id={}", id);
-        BankSlipEntity bankSlipEntity = getBankSlipById(id);
+        final BankSlipEntity bankSlipEntity = getBankSlipById(id);
         bankSlipEntity.setStatus(PAID);
         log.info("I=Verifing if bank slip already have payment date, bankSlipEntity={}", bankSlipEntity);
         if (bankSlipEntity.getPayment_date() == null) {
@@ -82,15 +82,15 @@ public class BankSlipServiceImpl implements BankSlipService {
     @Override
     public void cancelPaymentSlip(final UUID id) {
         log.info("I=Cancelling bank slip, id={}", id);
-        BankSlipEntity bankSlipEntity = getBankSlipById(id);
+        final BankSlipEntity bankSlipEntity = getBankSlipById(id);
         bankSlipEntity.setStatus(CANCELED);
         bankSlipRepository.save(bankSlipEntity);
     }
 
     // #Private#
-    public List<BankSlipFullDetailsDTO> listOfEntitysToVo(List<BankSlipEntity> bankSlipEntities) {
+    public List<BankSlipFullDetailsDTO> listOfEntitysToVo(final List<BankSlipEntity> bankSlipEntities) {
         log.info("I=Converting list of entity to dto, bankSlipEntities={}", bankSlipEntities);
-        List<BankSlipFullDetailsDTO> bankSlipFullDetailsDTOS = new ArrayList<>();
+        final List<BankSlipFullDetailsDTO> bankSlipFullDetailsDTOS = new ArrayList<>();
         bankSlipEntities.forEach(e -> {
             BankSlipFullDetailsDTO bankSlipDTO = new BankSlipFullDetailsDTO();
             bankSlipDTO.setId(e.getId());
@@ -121,7 +121,7 @@ public class BankSlipServiceImpl implements BankSlipService {
 
     private BankSlipEntity getBankSlipById(final UUID id) {
         log.info("I=Getting bank splip, id={}", id);
-        Optional<BankSlipEntity> bankSlipEntity = bankSlipRepository.findById(id);
+        final Optional<BankSlipEntity> bankSlipEntity = bankSlipRepository.findById(id);
         if (id != null && bankSlipEntity.isPresent()) {
             return bankSlipEntity.get();
         } else {

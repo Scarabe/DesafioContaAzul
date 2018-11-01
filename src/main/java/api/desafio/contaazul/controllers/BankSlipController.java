@@ -33,7 +33,7 @@ import lombok.extern.slf4j.Slf4j;
 public class BankSlipController {
 
     @Autowired
-    BankSlipService bankSlipService;
+    private BankSlipService bankSlipService;
 
     @ApiOperation(value = "Insert new bank slip")
     @RequestMapping(value = "/bankslips", method = RequestMethod.POST)
