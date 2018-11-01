@@ -2,6 +2,24 @@
 Olá avaliador! Neste readme irei dividir as informações relevantes em tópicos, o desafio que me foi passado foi:
 https://drive.google.com/file/d/1DvjRBTvnHwlUOoNBwAsvoRF6aKqYm7pP/view
 
+<h3><b>Como executar o projeto:</b></h3>
+Para executar o projeto existem duas formas relativamente praticas:
+<UL>
+  <LI><b>gradle bootRun</b><br>
+    Basta entrar no root do projeto e executar o comando <b>gradle bootRun</b>.
+  <LI><b>Via IDE</b><br>
+    Para executar o projeto via IDE basta entrar no projeto e executar a classe <b>ApiStarter.java</b>.
+</UL>
+ 
+<h3><b>Testes automatizados:</b></h3>
+Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outra dedicada a testes de integração.
+<UL>
+  <LI><b>Testes de integração</b><br>
+    Para executar os testes de integração é necessária a execução manual dos testes pós start do projeto (testes de integração <b>não funcionam</b> caso a aplicação não esteja rodando, está classe é a <b>BankSlipIntegration.java</b></br>
+  <LI><b>Testes unitários</b><br>
+    São testes aplicados somente a camada de serviço do projeto podendo ser executados a qualquer momento, são responsaveis       também pela line coverate do projeto, são executados automaticamente no build do projeto, podendo ser executados              manualmente via classe <b>BankSlipServiceTest.java</b>
+</UL>
+
 
 <h3><b>Técnologias Utilizadas:</b></h3>
 <UL>
@@ -23,19 +41,14 @@ https://drive.google.com/file/d/1DvjRBTvnHwlUOoNBwAsvoRF6aKqYm7pP/view
   <UL>
   <LI><b>http://localhost:8080/h2</b><br>
     Url destinada ao banco de dados H2, para conectar ao banco e observar suas informações os seguintes dados deveram ser         respeitados após start da aplicação.<br>
-    JDBC URL: jdbc:h2:~/DesafioContaAzul<br>
-    User name:admin<br>
-    password: admin<br>
+    <b>JDBC URL:</b> jdbc:h2:~/DesafioContaAzul<br>
+    <b>User name:</b>admin<br>
+    <b>password:</b> admin<br>
   <LI><b>http://localhost:8080/swagger-ui.html#/</b><br>
     Url base para acesso ao Swagger, ferramenta que disponibiliza testar os endpoints individualmente e analisar seus         
     respectivos retornos http, utilizado também para documentar a api.<br>
   <LI><b>http://localhost:8080/rest</b><br>
     Url base da api desenvolvida.<br>
 </UL>
-
-
-
-
-
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/418325e3ab7a401eaacffc87e648190f)](https://www.codacy.com/app/Scarabe/DesafioContaAzul?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Scarabe/DesafioContaAzul&amp;utm_campaign=Badge_Grade)
