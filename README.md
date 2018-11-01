@@ -53,7 +53,7 @@ Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outr
   <LI><b><a href='http://localhost:8080/swagger-ui.html#/'>http://localhost:8080/swagger-ui.html#/</a></b><br>
     Url base para acesso ao Swagger, ferramenta que disponibiliza testar os endpoints individualmente e analisar seus         
     respectivos retornos http, utilizado também para documentar a api.<br>
-  <LI><b><a href='http://localhost:8080/rest'>http://localhost:8080/rest</a></b><br>
+  <LI><b>http://localhost:8080/rest</b><br>
     Url base da api desenvolvida.<br>
 </UL>
 
