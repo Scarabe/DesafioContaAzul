@@ -85,6 +85,7 @@ public class BankSlipServiceTest {
     @Test
     public void whenDatailsHasPaymentDateBeforeTenDays() throws ParseException {
         bankSlipEntity.setPayment_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-05"));
+        bankSlipEntity.setFine(new BigDecimal(2));
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new BankSlipFullDetailsDTO(bankSlipEntity);
         bankSlipFullDetailsDTO.setFine(
@@ -95,6 +96,7 @@ public class BankSlipServiceTest {
     @Test
     public void whenDatailsHasPaymentDateAfterTenDays() throws ParseException {
         bankSlipEntity.setPayment_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-11"));
+        bankSlipEntity.setFine(new BigDecimal(3));
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new BankSlipFullDetailsDTO(bankSlipEntity);
         bankSlipFullDetailsDTO.setFine(
