@@ -9,7 +9,6 @@ import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -54,7 +53,7 @@ public class BankSlipIntegration {
     public void whenGiveRightData() throws ParseException {
         final InsertedBankSlipDTO insertedBankSlipDTO = new InsertedBankSlipDTO();
         insertedBankSlipDTO.setDue_date(new SimpleDateFormat("yyyy-MM-dd").parse("2018-01-01"));
-        insertedBankSlipDTO.setTotal_in_cents(new BigDecimal(100000));
+        insertedBankSlipDTO.setTotal_in_cents(new BigDecimal(100000).setScale(2));
         insertedBankSlipDTO.setCustomer("Trillian Company");
         insertedBankSlipDTO.setStatus(PENDING);
 
@@ -185,7 +184,7 @@ public class BankSlipIntegration {
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new Gson().fromJson(response.asString(),
                 BankSlipFullDetailsDTO.class);
         Assert.assertEquals(bankSlipFullDetailsDTO.getFine(),
-                insertedBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.005")).setScale(0, RoundingMode.UP));
+                insertedBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.005")).setScale(2));
     }
 
     @Test
@@ -200,7 +199,7 @@ public class BankSlipIntegration {
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new Gson().fromJson(response.asString(),
                 BankSlipFullDetailsDTO.class);
         Assert.assertEquals(bankSlipFullDetailsDTO.getFine(),
-                insertedBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.01")).setScale(0, RoundingMode.UP));
+                insertedBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.01")).setScale(2));
     }
 
     private Response getBankSlipDetail(final UUID uuid) {

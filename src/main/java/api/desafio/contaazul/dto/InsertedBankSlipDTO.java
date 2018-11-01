@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
+import javax.persistence.Column;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import api.desafio.contaazul.entitys.BankSlipEntity;
@@ -26,6 +28,7 @@ public class InsertedBankSlipDTO {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", timezone = "GMT-3")
     private Date due_date;
 
+    @Column(precision = 11, scale = 0)
     private BigDecimal total_in_cents;
 
     private String customer;

@@ -5,7 +5,6 @@ import static api.desafio.contaazul.enums.BankSlipStatusEnum.PAID;
 import static api.desafio.contaazul.enums.BankSlipStatusEnum.PENDING;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -44,7 +43,7 @@ public class BankSlipServiceImpl implements BankSlipService {
         log.info("I=Inserting newBankSlip={}", newBankSlip);
         validateNewBankSlip(newBankSlip);
         final BankSlipEntity bankSlipEntity = new BankSlipEntity(UUID.randomUUID(), newBankSlip.getDue_date(),
-                newBankSlip.getTotal_in_cents(), newBankSlip.getCustomer(),
+                newBankSlip.getTotal_in_cents().setScale(2), newBankSlip.getCustomer(),
                 PENDING);
         log.info("I=Inserting on bank, bankSlipEntity={}", bankSlipEntity);
         final BankSlipEntity savedBankSlipEntity = bankSlipRepository.save(bankSlipEntity);
@@ -114,9 +113,9 @@ public class BankSlipServiceImpl implements BankSlipService {
             return null;
         }
         if (TimeUnit.MILLISECONDS.toDays((payment_date.getTime() - due_date.getTime())) < 10) {
-            return total_in_cents.multiply(new BigDecimal("0.005")).setScale(0, RoundingMode.UP);
+            return total_in_cents.multiply(new BigDecimal("0.005")).setScale(2);
         } else {
-            return total_in_cents.multiply(new BigDecimal("0.01")).setScale(0, RoundingMode.UP);
+            return total_in_cents.multiply(new BigDecimal("0.01")).setScale(2);
         }
     }
 

@@ -38,7 +38,7 @@ public class BankSlipEntity {
     private Date payment_date;
 
     @NonNull
-    @Column(precision = 11, scale = 0)
+    @Column(precision = 11, scale = 2)
     private BigDecimal total_in_cents;
 
     @NonNull
@@ -47,6 +47,6 @@ public class BankSlipEntity {
     @NonNull
     private BankSlipStatusEnum status;
 
-    @Column(precision = 11, scale = 0)
+    @Column(precision = 11, scale = 2)
     private BigDecimal fine;
 }

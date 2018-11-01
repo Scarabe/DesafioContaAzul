@@ -3,7 +3,6 @@ package api.desafio.contaazul.unitary;
 import static java.util.Optional.ofNullable;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -59,7 +58,7 @@ public class BankSlipServiceTest {
 
         newBankSlipDTO.setCustomer("Customer test");
         newBankSlipDTO.setDue_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-01"));
-        newBankSlipDTO.setTotal_in_cents(new BigDecimal(250));
+        newBankSlipDTO.setTotal_in_cents(new BigDecimal(250).setScale(2));
 
         bankSlipEntity.setId(id);
         bankSlipEntity.setDue_date(newBankSlipDTO.getDue_date());
@@ -85,22 +84,22 @@ public class BankSlipServiceTest {
     @Test
     public void whenDatailsHasPaymentDateBeforeTenDays() throws ParseException {
         bankSlipEntity.setPayment_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-05"));
-        bankSlipEntity.setFine(new BigDecimal(2));
+        bankSlipEntity.setFine(new BigDecimal(1.25).setScale(2));
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new BankSlipFullDetailsDTO(bankSlipEntity);
         bankSlipFullDetailsDTO.setFine(
-                newBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.005")).setScale(0, RoundingMode.UP));
+                newBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.005")).setScale(2));
         Assert.assertEquals(bankSlipService.getBankSlipDetails(id), bankSlipFullDetailsDTO);
     }
 
     @Test
     public void whenDatailsHasPaymentDateAfterTenDays() throws ParseException {
         bankSlipEntity.setPayment_date(new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-11"));
-        bankSlipEntity.setFine(new BigDecimal(3));
+        bankSlipEntity.setFine(new BigDecimal(2.50).setScale(2));
         Mockito.when(bankSlipRepository.findById(id)).thenReturn(ofNullable(bankSlipEntity));
         BankSlipFullDetailsDTO bankSlipFullDetailsDTO = new BankSlipFullDetailsDTO(bankSlipEntity);
         bankSlipFullDetailsDTO.setFine(
-                newBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.01")).setScale(0, RoundingMode.UP));
+                newBankSlipDTO.getTotal_in_cents().multiply(new BigDecimal("0.01")).setScale(2));
         Assert.assertEquals(bankSlipService.getBankSlipDetails(id), bankSlipFullDetailsDTO);
     }
 
