@@ -10,7 +10,13 @@ Para executar o projeto existem duas formas relativamente praticas:
   <LI><b>Via IDE</b><br>
     Para executar o projeto via IDE basta entrar no projeto e executar a classe <b>ApiStarter.java</b>.
 </UL>
- 
+    
+<h3><b>Code coverege e code quality:</b></h3>
+Para code coverage, testes unitários, foi considerada apenas classes de serviço, para estas classes o código teve 100% de suas linhas cobertas.
+Para code quality foi utilizada a ferramenta <b>codacy</b> apos analyse feita, a ferramenta apontou apenas 10 issues relacionadas a code style portanto com peso zero de avaliação, totalizando 3% de issues no projeto e disponibilizando ao projeto a certificação A.
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/418325e3ab7a401eaacffc87e648190f)](https://www.codacy.com/app/Scarabe/DesafioContaAzul?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Scarabe/DesafioContaAzul&amp;utm_campaign=Badge_Grade)
+
 <h3><b>Testes automatizados:</b></h3>
 Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outra dedicada a testes de integração.
 <UL>
