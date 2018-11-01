@@ -1,3 +1,15 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
+    }
+}
+
 plugins {
     id 'java'
 }
@@ -5,19 +17,27 @@ plugins {
 group 'DesafioContaAzul'
 version '1.0-SNAPSHOT'
 
+
+apply plugin: 'jacoco'
+apply plugin: 'org.springframework.boot'
+
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
-apply plugin: 'jacoco'
+compileJava {
+    options.encoding = 'ISO-8859-1'
+}
+
+
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
     compile group: 'com.jayway.restassured', name: 'rest-assured', version: '2.9.0'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.5.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.5.RELEASE'
     compile group: 'com.h2database', name: 'h2', version: '1.4.197'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
