@@ -5,11 +5,21 @@ https://drive.google.com/file/d/1DvjRBTvnHwlUOoNBwAsvoRF6aKqYm7pP/view
 <h3><b>Como executar o projeto:</b></h3>
 Para executar o projeto existem duas formas relativamente praticas:
 <UL>
-  <LI><b>gradle bootRun</b><LI>
-    Basta entrar no root do projeto e executar o comando <b>gradle bootRun</b>]
-  <LI><b>Via IDE</b><LI>
-    Para executar o projeto via IDE basta entrar no projeto e executar a classe <b>ApiStarter.java</b>
+  <LI><b>gradle bootRun</b><br>
+    Basta entrar no root do projeto e executar o comando <b>gradle bootRun</b>.<LI>
+  <LI><b>Via IDE</b><br>
+    Para executar o projeto via IDE basta entrar no projeto e executar a classe <b>ApiStarter.java</b>.<LI>
 </UL>
+ 
+<h3><b>Testes automatizados:</b></h3>
+Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outra dedicada a testes de integração.
+<UL>
+  <LI><b>Testes de integração</b><br>
+    Para executar os testes de integração é necessária a execução manual dos testes pós start do projeto (testes de integração <b>não</b> funcionam caso a aplicação não esteja rodando, está classe é a <b>BankSlipIntegration.java</br>
+  <LI><b>Testes unitários</b><br>
+    São testes aplicados somente a camada de serviço do projeto podendo ser executados a qualquer momento, são responsaveis também pela line coverate do projeto, são executados automaticamente no build do projeto, podendo ser executados manualmente via classe <b>BankSlipServiceTest.java</b><LI>
+</UL>
+
 
 <h3><b>Técnologias Utilizadas:</b></h3>
 <UL>
