@@ -48,8 +48,8 @@ Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outr
   <LI><b><a href='http://localhost:8080/h2'>http://localhost:8080/h2</a></b><br>
     Url destinada ao banco de dados H2, para conectar ao banco e observar suas informações os seguintes dados deveram ser         respeitados após start da aplicação.<br>
     <b>JDBC URL:</b> jdbc:h2:~/DesafioContaAzul<br>
-    <b>User name:</b>admin<br>
-    <b>password:</b> admin<br>
+    <b>User name:</b> admin<br>
+    <b>Password:</b> admin<br>
   <LI><b><a href='http://localhost:8080/swagger-ui.html#/'>http://localhost:8080/swagger-ui.html#/</a></b><br>
     Url base para acesso ao Swagger, ferramenta que disponibiliza testar os endpoints individualmente e analisar seus         
     respectivos retornos http, utilizado também para documentar a api.<br>
