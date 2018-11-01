@@ -62,8 +62,7 @@ public class BankSlipServiceImpl implements BankSlipService {
         log.info("I=Getting bank slip with deteils by, id={}", id);
         final BankSlipEntity bankSlipEntity = getBankSlipById(id);
         final BankSlipFullDetailsDTO bankSlip = new BankSlipFullDetailsDTO(bankSlipEntity);
-        bankSlip.setFine(
-                calculateFine(bankSlip.getDue_date(), bankSlip.getPayment_date(), bankSlip.getTotal_in_cents()));
+        bankSlip.setFine(bankSlipEntity.getFine());
         return bankSlip;
     }
 
@@ -75,6 +74,8 @@ public class BankSlipServiceImpl implements BankSlipService {
         log.info("I=Verifing if bank slip already have payment date, bankSlipEntity={}", bankSlipEntity);
         if (bankSlipEntity.getPayment_date() == null) {
             bankSlipEntity.setPayment_date(paymentDate.getPayment_date());
+            bankSlipEntity.setFine(calculateFine(bankSlipEntity.getDue_date(), paymentDate.getPayment_date(),
+                    bankSlipEntity.getTotal_in_cents()));
             bankSlipRepository.save(bankSlipEntity);
         }
     }
@@ -99,7 +100,7 @@ public class BankSlipServiceImpl implements BankSlipService {
             bankSlipDTO.setTotal_in_cents(e.getTotal_in_cents());
             bankSlipDTO.setCustomer(e.getCustomer());
             bankSlipDTO.setStatus(e.getStatus());
-            bankSlipDTO.setFine(calculateFine(e.getDue_date(), e.getPayment_date(), e.getTotal_in_cents()));
+            bankSlipDTO.setFine(e.getFine());
             bankSlipFullDetailsDTOS.add(bankSlipDTO);
         });
 

@@ -46,4 +46,7 @@ public class BankSlipEntity {
 
     @NonNull
     private BankSlipStatusEnum status;
+
+    @Column(precision = 11, scale = 0)
+    private BigDecimal fine;
 }
