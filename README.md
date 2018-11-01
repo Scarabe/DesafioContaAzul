@@ -57,4 +57,6 @@ Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outr
     Url base da api desenvolvida.<br>
 </UL>
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/418325e3ab7a401eaacffc87e648190f)](https://www.codacy.com/app/Scarabe/DesafioContaAzul?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Scarabe/DesafioContaAzul&amp;utm_campaign=Badge_Grade)
+<h3><b>Considerações finais:</b></h3>
+  Gostei de executar o projeto, coloquei em pratica atividades de configuração que eu já conhecia, mas que não executava com certa frequencia, agradeço ao avaliador pela oportunidade.
+  Deixo também o questionamento, no calculo de multa a ser paga dependendo do valor inserido pode existir casas decimais no percentual, mas o valor trabalhado é em centavos, no dia a dia não existe um valor real inferior a um centavo, acredito que deveria ser discutido com o PO um arredondamento deste valor.
