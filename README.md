@@ -45,7 +45,7 @@ Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outr
 
 <h3><b>Urls relevantes:</b></h3>
   <UL>
-  <LI><b>http://localhost:8080/h2</b><br>
+  <LI><b><a href='http://localhost:8080/h2'>http://localhost:8080/h2</a></b><br>
     Url destinada ao banco de dados H2, para conectar ao banco e observar suas informações os seguintes dados deveram ser         respeitados após start da aplicação.<br>
     <b>JDBC URL:</b> jdbc:h2:~/DesafioContaAzul<br>
     <b>User name:</b>admin<br>
