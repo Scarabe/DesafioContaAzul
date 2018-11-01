@@ -44,7 +44,7 @@ public class BankSlipControllerTest {
     private String CONTENT_TYPE = "application/json";
 
     @Before
-    public void setup() throws Exception {
+    public void setUp() throws Exception {
         insertData.put("due_date", "2018-01-01");
         insertData.put("total_in_cents", "100000");
         insertData.put("customer", "Trillian Company");

@@ -1,4 +1,4 @@
-package api.desafio.contaazul.unitTest;
+package api.desafio.contaazul.unitary;
 
 import static java.util.Optional.ofNullable;
 
