@@ -32,7 +32,6 @@ Existem duas switchs de tests no projeto, uma dedicada a testes unitarios e outr
   <LI><b>Junit v4.12:</b> Ferramenta utilizada para criação de testes unitários.</LI>
   <LI><b>Mockito v1.9.5:</b> Ferramenta utilizada para criação de mocks de objetos e métodos.</LI>
   <LI><b>Rest Assure v2.9.0:</b> Ferramenta de automação de testes em api rest.</LI>
-  <LI><b>Jacoco v0.8.2:</b> Utilizado para execução de testes em build e visualização de code coverage.</LI>
   <LI><b>Spring Fox(Swager2 e SwaggerUi) v2.9.2:</b> Utilizado para disponibilização do swagger, ferramenta de documentação de api.</LI>
   <LI><b>Jacoco v0.8.2:</b> Utilizado para execução de testes em build e visualização de code coverage.</LI>  
   <LI><b>SpringFramework(Web e DataJpa) v2.0.5:</b> Ferramenta facilitadora de configuração de projetos.</LI>
